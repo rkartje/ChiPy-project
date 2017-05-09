@@ -1,0 +1,28 @@
+- Lecture
+
+    - good lecture about class design
+    - youtube: https://www.youtube.com/watch?v=HTLu2DFOdTg
+    
+- API (1) - design of classes / functions
+
+    - universally recognized as a well-designed API
+    - requests library: http://docs.python-requests.org/en/master/
+    
+    - all you care about is knowing HOW to use the available components
+    
+    import requests
+    
+    response = requests.get("my.website.com")
+    print(response._content)
+    
+- API (2) - some set of classes / functions available for use, typically over the web
+    
+    - every big tech company has an API
+    - facebook api, google api, meetup.com api, ...
+    
+    - you also care about being ALLOWED to use the components
+    - you are issued a "token" that allows you access to the API
+    
+    - https://www.twilio.com/sms/api
+    - https://developers.facebook.com/
+

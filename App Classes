@@ -1,0 +1,24 @@
+Class Patient:
+    def set_pt_name(self, name):
+        self.__pt_name = name
+        
+    def set_pt_dob (self, dob):
+        self.__pt_dob = dob
+        
+    def set_pt_mrn (self, mrn):
+        self.__pt_mrn = mrn
+        
+    def set_pt_phone (self, phone):
+        self.__pt_phone = phone
+
+Patients
+    - can record their own encounters (add an encounter to the db)
+    - modify an inaccurate encounter (modify a record in db)
+    - get a set of their own encounters (select records from db)
+Encounters
+    - make a graph out of a self of these records
+Providers
+    - can view encounter data for a patient that they provided care for (select records from db)
+    - get a set of encounters for a given patient (select records from db)
+    - make a diagnosis based on encounters (modify records from db)
+    - make a medication adjustment (modify records from db)

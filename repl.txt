@@ -1,0 +1,1 @@
+script_or_library.add_two(5)
