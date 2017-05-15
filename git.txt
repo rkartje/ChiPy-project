@@ -1,6 +1,7 @@
-git init
 git add .
-git commit -m "first commit"
-git remote add origin https://github.com/rkartje/ChiPy-project
-git remote -v
+git commit -m "feature ..."
+git push origin master
+
+get add .
+get commit -m "new_patient"
 git push origin master
