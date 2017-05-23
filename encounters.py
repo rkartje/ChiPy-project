@@ -1,6 +1,6 @@
 class Encounter:
     def __init__(self, patient, provider, timestamp, reading):
-        self.patient = patient
+        self.patient = patient #is this the medical_number or name or??
         self.provider = provider
         self.timestamp = timestamp
         self.reading = reading

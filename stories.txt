@@ -1,0 +1,36 @@
+As a patient, I can record my blood glucose
+... The data should automatically be sent to my provider (this should be automatic)
+... I can see my blood glucose history (as a graph)
+... I want to communicate with my provider
+... I can track my medications
+
+As a provider, I want to see my patient's activity
+... I want to see their history (as a graph)
+... their medications
+... their diagnosis
+... I can communicate with my patient
+... I can make medication changes
+
+---
+
+Core app:
+
+- list history (patient)
+
+- graph history (history list)
+    - somehow, given the patient, find all of the patient's encounters
+    - and then display a view of multiple (if not all) of them
+    - v0 of the graph can be very simple
+
+- view patient (patient)
+    - might be as simple as accesssing patient.medications
+    - but there also might be more that we can do
+
+
+
+Backburner:
+
+- send_message(to, message_body)
+- receive_messages(...)
+- online
+- login

@@ -1,6 +1,8 @@
 class Patient:
     #init is a function that tacks some info onto an object
     #extend patient class to include diagnosis, medications, provider_id
+    #Consider: add 2 new variables and methods and consider removing the 
+    #Encounter class. 
     
     def __init__(self, name, birthdate, medical_number, phone_number, \
     diagnosis, medications, provider_id):
@@ -12,9 +14,10 @@ class Patient:
         self.medications = medications
         self.provider_id = provider_id
         
+        
         def record_encounter(self, date, reading):
         # to do
-        pass
+            pass
 
     #methods - mutators, to assign values to fields
     def set_name (self, name):
@@ -35,7 +38,7 @@ class Patient:
     def set_medications (self, medications):
         self.__medications = medications
         
-    def set._provider_id (self, provider_id):
+    def set_provider_id (self, provider_id):
         self.__provider_id = provider_id
         
     #methods - assessors, to get values from fields
