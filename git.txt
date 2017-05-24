@@ -2,6 +2,3 @@ git add .
 git commit -m "feature ..."
 git push origin master
 
-git add .
-git commit -m "patient class update"
-git push origin master
