@@ -1,33 +1,33 @@
 class Provider:
-    def __init__ (self, prov_id, provider_lastname, provider_phone_number, provider_email):
-        #think of better variable and field names
-        self.prov_id = prov_id
-        self.provider_lastname = provider_lastname
-        self.provider_phone_number = provider_phone_number
+    #provider id is a 3 digit number
+    #provider name is first initial and last name
+    def __init__ (self, provider_id, provider_name, provider_phone, provider_email, specialty=None, board_certified):
+        self.provider_id = provider_id
+        self.provider_name = provider_name
+        self.provider_phone = provider_phone
         self.provider_email = provider_email
+        self.specialty = []
+        self.board_certified = board_certified
         
-    #mutators
-    def set_prov_id (self, prov_id):
-        self.__prov_id = prov_id
+        #if provider is board certifed return BC otherwise leave blank
+        if board certified is true:
+            return BC
+    
+        #if there is a specialty add it to the list otherwise leave blank
+        if specialty is not None:
+            self.specialty.append(specialty)
         
-    def set_provider_lastname (self, provider_lastname):
-        self.__provider_lastname = provider_lastname
-        
-    def set_provider_phone_number (self, provider_phone_number):
-        self.__provider_phone_number = provider_phone_number
-        
-    def set_provider_email (self, provider_email):
-        self.__provider_email = provider_email
-        
-    #accessors
-    def get_prov_id (self):
-        return self.__prov_id
-        
-    def get_provider_lastname (self):
-        return self.__provider_lastname
-        
-    def get_provider_phone_number (self):
-        return self.__provider_phone_number
-        
-    def get_provider_email (self):
-        return self.__provider_email 
+
+#create an instance of this class
+provider1 = Provider (345, "pshah", "(630) 986-1177", "pshah@umc.edu", general_medicine, board_certified)
+print provider1.provider_name
+print provider1.provider_phone
+
+#create another instance of this class
+provider2 = Provider(789, "jphillips", "(630)256-7000", "jphil@umc.edu")
+print provider2.provider_id, provider2.provider_name
+
+
+
+    
+    

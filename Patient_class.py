@@ -29,7 +29,7 @@ class Patient:
     
     
     def __init__(self, name, birthdate, medical_number, phone_number, \
-    provider_id,medication=None, diagnosis=None, encounter=None):
+    provider_id, medication=None, diagnosis=None, encounter=None):
         self.name = name
         self.birthdate = birthdate 
         self.medical_number = medical_number
